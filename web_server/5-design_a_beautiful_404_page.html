@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    color: #e6edf3;
+    background: radial-gradient(circle at 20% 20%, #1f2a44, #0b0f1a 70%);
+    overflow: hidden;
+    text-align: center;
+  }
+  .wrap { position: relative; z-index: 1; padding: 24px; }
+  h1 {
+    font-size: clamp(6rem, 22vw, 12rem);
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float { 50% { transform: translateY(-12px); } }
+  p.fr { font-size: 1.6rem; margin: 16px 0 6px; font-style: italic; }
+  p.sub { color: #9aa7b8; margin-bottom: 32px; }
+  a.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 999px;
+    color: #0b0f1a;
+    background: linear-gradient(90deg, #feca57, #48dbfb);
+    text-decoration: none;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>404</h1>
+    <p class="fr">Ceci n'est pas une page</p>
+    <p class="sub">This is not a page. You've drifted off the map.</p>
+    <a class="btn" href="/">Take me home</a>
+  </div>
+</body>
+</html>
