@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Makes nginx listen on port 80 by relinking the default site and restarting nginx
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
